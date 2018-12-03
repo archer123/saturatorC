@@ -1,0 +1,6 @@
+payload.o: payload.c payload.h
+socket.o: socket.c socket.h
+acker.o: acker.c acker.h socket.h saturateservo.h payload.h
+saturateservo.o: saturateservo.c saturateservo.h socket.h acker.h \
+ payload.h
+saturatr.o: saturatr.c acker.h socket.h saturateservo.h
